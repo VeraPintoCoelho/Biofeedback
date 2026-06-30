@@ -435,9 +435,16 @@
       padding: 90px 0;
     }
 
-    .certification-card {
-      max-width: 900px;
+    .certification-layout {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 40px;
+      align-items: center;
+      max-width: 1120px;
       margin: 0 auto;
+    }
+
+    .certification-card {
       background: var(--off-white);
       padding: 40px;
       border-radius: 24px;
@@ -448,6 +455,13 @@
       margin-bottom: 18px;
       line-height: 1.7;
       color: var(--text-secondary);
+    }
+
+    .certification-image img {
+      width: 100%;
+      display: block;
+      border-radius: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     }
 
     .cert-button {
@@ -465,6 +479,11 @@
     .cert-button:hover {
       transform: translateY(-2px);
       opacity: 0.9;
+    }
+
+    @media (max-width: 768px) {
+      .certification-layout {
+        grid-template-columns: 1fr;
     }
 
     /* ── BENEFITS ── */
@@ -1403,22 +1422,28 @@
       <p class="section-subtitle">Tecnologia certificada para uma prática segura e responsável.</p>
     </div>
 
-    <div class="certification-card">
-      <p>
-        O sistema Mandelay Q9 é um equipamento registado, com marcação CE, cumprindo os requisitos aplicáveis em matéria de segurança e conformidade.
-      </p>
+    <div class="certification-layout">
+      <div class="certification-card">
+        <p>
+          O sistema Mandelay Q9 é um equipamento registado, com marcação CE, cumprindo os requisitos aplicáveis em matéria de segurança e conformidade.
+        </p>
 
-      <p>
-        Antes de escolher um profissional de biofeedback, é importante confirmar que o equipamento utilizado possui certificação adequada. A utilização de tecnologia certificada contribui para que as sessões decorram com maior segurança e de acordo com os padrões exigidos.
-      </p>
+        <p>
+          Antes de escolher um profissional de biofeedback, é importante confirmar que o equipamento utilizado possui certificação adequada. A utilização de tecnologia certificada contribui para que as sessões decorram com maior segurança e de acordo com os padrões exigidos.
+        </p>
 
-      <p>
-        O Biofeedback é uma técnica não invasiva e geralmente bem tolerada. No entanto, por princípio de precaução, não é recomendado durante a gravidez, em pessoas com pacemaker ou outros dispositivos eletrónicos implantados, nem em pessoas com epilepsia.
-      </p>
+        <p>
+          O Biofeedback é uma técnica não invasiva e geralmente bem tolerada. No entanto, por princípio de precaução, não é recomendado durante a gravidez, em pessoas com pacemaker ou outros dispositivos eletrónicos implantados, nem em pessoas com epilepsia.
+        </p>
 
-      <a href="https://vibeyoup.com/en/certificates/" target="_blank" rel="noopener noreferrer" class="cert-button">
-        Certificados
-      </a>
+        <a href="https://vibeyoup.com/en/certificates/" target="_blank" rel="noopener noreferrer" class="cert-button">
+          Certificados
+        </a>
+      </div>
+
+      <div class="certification-image">
+        <img src="images/mandelay-q9-biofeedback.jpg" alt="Equipamento Mandelay Q9 de Biofeedback">
+      </div>
     </div>
   </div>
 </section>
