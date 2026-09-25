@@ -45,9 +45,9 @@
       --text-primary: #1D1D1F;
       --text-secondary: #6E6E73;
       --text-light: #9A9A9F;
-      --accent: #4A7C5B;
-      --accent-light: #E8F0EB;
-      --accent-hover: #3A6148;
+     --accent: #008893;
+     --accent-light: #E6F4F5;
+     --accent-hover: #005695;
       --border: #E5E5E7;
       --border-light: #F0F0F2;
       --shadow-subtle: 0 4px 24px rgba(0,0,0,0.05);
@@ -193,7 +193,7 @@
       right: -200px;
       width: 700px;
       height: 700px;
-      background: radial-gradient(circle, rgba(74,124,91,0.07) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(0,136,147,0.07) 0%, transparent 70%);
       pointer-events: none;
     }
 
@@ -266,14 +266,14 @@
       font-weight: 500;
       text-decoration: none;
       transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
-      box-shadow: 0 4px 20px rgba(74,124,91,0.25);
+      box-shadow: 0 4px 20px rgba(0,136,147,0.25);
       min-height: 44px;
     }
 
     .btn-primary:hover {
       background: var(--accent-hover);
       transform: translateY(-2px);
-      box-shadow: 0 8px 28px rgba(74,124,91,0.32);
+      box-shadow: 0 8px 28px rgba(0,136,147,0.32);
     }
 
     .btn-secondary {
@@ -332,7 +332,7 @@
     .hero-photo-bg {
       position: absolute;
       inset: 0;
-      background: linear-gradient(135deg, var(--accent-light) 0%, #EEF4F0 100%);
+      background: linear-gradient(135deg, var(--accent-light) 0%, #EAF6F7 100%);
       border-radius: var(--radius-lg);
     }
 
@@ -671,7 +671,7 @@
     .about-img-container {
       width: 100%;
       aspect-ratio: 4/5;
-      background: linear-gradient(135deg, var(--accent-light) 0%, #EEF4F0 100%);
+      background: linear-gradient(135deg, var(--accent-light) 0%, #EAF6F7 100%);
       border-radius: var(--radius-lg);
       overflow: hidden;
       position: relative;
@@ -886,7 +886,7 @@
 
     /* ── CTA SECTION ── */
     .cta-section {
-      background: linear-gradient(135deg, #3A6148 0%, #4A7C5B 100%);
+      background: linear-gradient(135deg, #005695 0%, #008893 100%)
       color: white;
     }
 
