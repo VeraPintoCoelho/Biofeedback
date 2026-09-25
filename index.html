@@ -226,7 +226,16 @@
       text-transform: uppercase;
     }
 
-    .hero-badge span { font-size: 1rem; }
+    .badge-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.hero-badge span {
+    font-size: inherit;
+}
 
     .hero h1 {
       font-family: var(--font-display);
@@ -1355,7 +1364,10 @@
 <section class="hero">
   <div class="hero-inner container">
     <div class="hero-content">
-      <div class="hero-badge"><span>🌿</span> Terapeuta certificada de Biofeedback</div>
+      <div class="hero-badge">
+    <img src="colibri-vera-pinto-coelho.png" alt="" class="badge-icon">
+    <span>Terapeuta certificada de Biofeedback</span>
+</div>
       <h1><em>Biofeedback</em> Terapia não invasiva</h1>
 
 <p class="hero-sub" style="margin-bottom: 1rem;"><strong>Reduza os sinais de stress e recupere o equilíbrio através de uma abordagem não invasiva, personalizada e baseada na autorregulação do organismo.</strong></p>
