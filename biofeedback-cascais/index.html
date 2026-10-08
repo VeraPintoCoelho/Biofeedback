@@ -1998,7 +1998,7 @@ Marcações e informações por WhatsApp.
     <div class="contact-form">
       <h3>Enviar mensagem</h3>
       <div class="form-subtitle">Escreve a tua mensagem abaixo para mais informações.</div>
-      <form action="https://formspree.io/f/maeqedyq" method="POST">
+      <form id="contactForm" action="https://formspree.io/f/maeqedyq" method="POST">
         <div class="form-group">
           <label for="name">Nome</label>
           <input type="text" id="name" name="name" required />
@@ -2068,6 +2068,34 @@ Marcações e informações por WhatsApp.
     const answer = element.nextElementSibling;
     answer.classList.toggle('open');
   }
+  const contactForm = document.getElementById('contactForm');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', async function(event) {
+    event.preventDefault();
+
+    const formData = new FormData(contactForm);
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        window.location.href = '/obrigada/';
+      } else {
+        alert('Não foi possível enviar a mensagem. Por favor, tenta novamente ou contacta-me por WhatsApp.');
+      }
+
+    } catch (error) {
+      alert('Não foi possível enviar a mensagem. Por favor, tenta novamente ou contacta-me por WhatsApp.');
+    }
+  });
+}
 </script>
 
 </body>
