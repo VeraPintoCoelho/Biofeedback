@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Mensagem enviada | Vera Pinto Coelho</title>
+
+  <meta name="robots" content="noindex, nofollow" />
+
+  <link rel="icon" type="image/png" href="../colibri-vera-pinto-coelho.png" />
+  <link rel="shortcut icon" href="../colibri-vera-pinto-coelho.png" />
+  <link rel="apple-touch-icon" href="../colibri-vera-pinto-coelho.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --accent: #008893;
+      --accent-dark: #005695;
+      --accent-light: #E6F4F5;
+      --text: #1D1D1F;
+      --secondary: #6E6E73;
+      --white: #FFFFFF;
+      --border: #E5E5E7;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      color: var(--text);
+      background: var(--white);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      height: 72px;
+      display: flex;
+      align-items: center;
+      padding: 0 5vw;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header img {
+      width: 200px;
+      height: auto;
+      display: block;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 70px 5vw;
+      position: relative;
+      overflow: hidden;
+    }
+
+    main::before {
+      content: '';
+      position: absolute;
+      width: 650px;
+      height: 650px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,136,147,0.08) 0%, transparent 70%);
+      top: -260px;
+      right: -200px;
+      pointer-events: none;
+    }
+
+    .thank-you {
+      max-width: 720px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .icon {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 28px;
+      border-radius: 50%;
+      background: var(--accent-light);
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 34px;
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: clamp(2.5rem, 6vw, 4.2rem);
+      line-height: 1.1;
+      margin-bottom: 22px;
+      letter-spacing: -0.02em;
+    }
+
+    h1 em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .lead {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: var(--secondary);
+      max-width: 600px;
+      margin: 0 auto 14px;
+    }
+
+    .small {
+      font-size: 0.95rem;
+      color: var(--secondary);
+      margin-bottom: 36px;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 14px 26px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.25s ease;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: white;
+      box-shadow: 0 5px 20px rgba(0,136,147,0.22);
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      border: 1px solid var(--border);
+      color: var(--text);
+      background: white;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    footer {
+      padding: 24px 5vw;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #9A9A9F;
+    }
+
+    @media (max-width: 600px) {
+      header img {
+        width: 175px;
+      }
+
+      main {
+        padding: 50px 6vw;
+      }
+
+      .actions {
+        flex-direction: column;
+      }
+
+      .btn-primary,
+      .btn-secondary {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="../">
+      <img src="../logo-vera-pinto-coelho.png"
+           alt="Vera Pinto Coelho · Biofeedback Specialist">
+    </a>
+  </header>
+
+  <main>
+    <div class="thank-you">
+
+      <div class="icon">✓</div>
+
+      <h1>Mensagem <em>enviada.</em></h1>
+
+      <p class="lead">
+        Obrigada pelo teu contacto. A tua mensagem chegou até mim
+        e responderei assim que possível.
+      </p>
+
+      <p class="small">
+        Se o assunto for mais urgente ou preferires falar diretamente comigo,
+        podes também contactar-me por WhatsApp.
+      </p>
+
+      <div class="actions">
+
+        <a href="../biofeedback-cascais/" class="btn-secondary">
+          ← Voltar ao site
+        </a>
+
+        <a href="https://wa.me/351918560941"
+           target="_blank"
+           rel="noopener"
+           class="btn-primary">
+          💬 Falar comigo no WhatsApp
+        </a>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    © 2026 Vera Pinto Coelho · Biofeedback Specialist
+  </footer>
+
+</body>
+</html>
